@@ -6,17 +6,17 @@ url: "flexton.netlify.com" # the base hostname & protocol for your site, e.g. ht
 # Author
 author-name:    POPCORNBOOM
 author-image:   1.jpg
-author-job:     Web Developer
-author-email:   your-email@domain.com # Add your email for contant form.
-author-twitter: artemsheludko_ # Add your twitter account
-about-author:   I am a web developer focusing on front-end development. Always hungry to keep learning.
+author-job:     开发 创客 网管 漏洞审查 FAE
+author-email:   popcornboom_137@qq.com
+author-twitter:  no
+about-author:   16岁，学生desu。
 
 # Social settings
-social-twitter:   artemsheludko_
+social-twitter:   
 social-facebook:
-social-github:    artemsheludko
-social-pinterest: artemsheludko
-social-instagram: artemsheludko_
+social-github:    POPCORNBOOM
+social-pinterest: 
+social-instagram: 
 social-youtube:
 social-vk:   
 social-linkedin:
@@ -28,7 +28,7 @@ mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.
 google-analytics: # Add your identifier. For example UA-99631805-1
 
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: POPCORNBOOM # Add your shortname for Disqus Comment. For example mr-brown
 
 # Build settings
 markdown: kramdown
