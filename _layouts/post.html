@@ -34,15 +34,15 @@ layout: home
           {% endfor %}
         </div>
         <div class="c-article__share">
-          <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ page.url }}" title="Share
-          on Twitter" rel="nofollow" target="_blank"><div data-icon='ei-sc-twitter' data-size='s'></div></a>
-          <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" rel="nofollow" target="_blank"><div data-icon='ei-sc-facebook' data-size='s'></div></a>
-          <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google+" rel="nofollow" target="_blank"><div data-icon='ei-sc-google-plus' data-size='s'></div></a>
+          <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ page.url }}" title="分享到Twitter" rel="nofollow" target="_blank"><div data-icon='ei-sc-twitter' data-size='s'></div></a>
+          <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="分享到Facebook" rel="nofollow" target="_blank"><div data-icon='ei-sc-facebook' data-size='s'></div></a>
+          <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="分享到Google+" rel="nofollow" target="_blank"><div data-icon='ei-sc-google-plus' data-size='s'></div></a>
+          <a href="https://connect.qq.com/widget/shareqq/index.html?url={{ site.url }}{{ page.url }}" title="分享到QQ" rel="nofollow" target="_blank"><div data-icon='ei-share-google' data-size='s'></div></a>
         </div>
       </div>
       {% include newsletter.html %}
       <div class="c-recent-post">
-        <h4 class="c-recent__title">You might also enjoy</h4>
+        <h4 class="c-recent__title">你也许会感兴趣......</h4>
         <div class="c-recent__box">
         {% for post in site.related_posts limit:4 %}
         {% if post.image %}
