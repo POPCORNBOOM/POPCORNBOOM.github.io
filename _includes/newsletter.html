@@ -5,7 +5,7 @@
   </div>
   <form class="c-newsletter-form validate" action="{% if site.mailchimp %}//{{site.mailchimp}}{% else %}#{% endif %}" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
     <div class="c-newsletter-form__group">
-      <label class="u-screen-reader-text" for="mce-EMAIL">Email address</label>
+      <label class="u-screen-reader-text" for="mce-EMAIL">电子邮箱</label>
       <input class="c-newsletter__email required email" id="mce-EMAIL" type="email" name="EMAIL" placeholder="您的邮箱地址" autocomplete="on">
       <input class="c-newsletter__button" id="mc-embedded-subscribe" type="submit" name="subscribe" value="订阅">
     </div>
