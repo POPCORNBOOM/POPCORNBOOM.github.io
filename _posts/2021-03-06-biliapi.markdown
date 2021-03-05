@@ -1,0 +1,15 @@
+---
+layout: post
+title: 【小 工 具】BrickcomBreaker（BCB）摄像头弱口令漏洞利用
+image: wointonetcam.jpg
+date: 2021-03-05 23:57:00 +0200
+tags: [工具,漏洞,校园,网络摄像头]
+categories: BCB
+---
+
+这 日 中 午 无 聊 ， 发 现 粉 丝 又 掉 了 一 个 。 我 正 寻 思 我 到 底 是 哪 里 做 得 不好 了 掉 了 个 粉 ， 本 着 好 奇 心 的 驱 使 ， 前 去 创 作 中 心 ， 个 人 空 间 …… 找 遍 整 个 B 站 都 没 找 到 显 示 昨 天 掉 的 那 个 粉 丝 究 竟 是 谁 。
+
+
+***
+
+<div class="article-holder"><p><br></p><p><span class="color-yellow-02">这是<span class="font-size-20"><strong>米花</strong></span>第一次写专栏，如果有什么不足的地方，希望大家多多<strong>包涵</strong>并给出<strong>建议~</strong></span></p><p><strong><br></strong></p><p><span class="color-gray-01">这日中午无聊，发现粉丝又掉了一个。我正寻思我到底是哪里做得不好了掉了个粉，本着好奇心的驱使，前去创作中心，个人空间……找遍整个B站都没找到显示昨天掉的那个粉丝究竟是谁。</span></p><figure class="img-box"><img class="cut-off-5 loaded" src="//i0.hdslb.com/bfs/article/4adb9255ada5b97061e610b682b8636764fe50ed.png"></figure><p><br></p><p>我就在想能不能用别的方式找到掉的那个粉丝。于是去找api，客服啊，教程啊。写的都是粉丝个数的api，客服也回应表示主站暂时没有。我只能去html里找。</p><p><br></p><p>于是翻着翻着终于在<span class="color-green-04"><strong>个人主页</strong></span>的网页里找到啦！</p><figure class="img-box"><img data-src="//i0.hdslb.com/bfs/article/e3d8125ab417bd57e975c49cfd4e8f8eb866b5e6.png@1264w_682h.webp" width="632" height="341" data-size="22496" data-index="0" src="//i0.hdslb.com/bfs/article/e3d8125ab417bd57e975c49cfd4e8f8eb866b5e6.png@1264w_682h.webp" class="loaded" style="width: 632px; height: 341px;"><figcaption class="caption">个人主页的html</figcaption></figure><p>复制下来<span style="text-decoration: line-through;">、除杂、过滤、蒸发</span>得到这个</p><p><br></p><p><span class="font-size-23">http://api.bilibili.com/x/relation/followers?vmid=<span class="color-green-02"><strong>UID</strong></span>&amp;pn=<span class="color-green-02"><strong>页数</strong></span></span></p><p><span class="font-size-23"><span class="color-green-02"><strong><br></strong></span></span></p><p><a target="_blank" href="http://api.bilibili.com/x/relation/followers?vmid=149407344&amp;pn=1">Example</a></p><p>*<strong><span class="color-green-02">页数</span></strong>可以替换成粉丝页面的页数</p><p>*<span class="color-green-02"><strong>UID</strong></span>替换成需要获取的人的UID，可以在个人主页和其网址里找到：</p><figure class="img-box"><img data-src="//i0.hdslb.com/bfs/article/watermark/35e8b6a6cd26d23771c059013feaa156773f670a.png@1320w_764h.webp" width="1866" height="1080" data-size="1358654" data-index="1" src="//i0.hdslb.com/bfs/article/watermark/35e8b6a6cd26d23771c059013feaa156773f670a.png@1320w_764h.webp" class="loaded" style="width: 660px; height: 382px;"><figcaption class="caption">UID的获取</figcaption></figure><p><br></p><p>由此获得：</p><figure class="img-box"><img data-src="//i0.hdslb.com/bfs/article/watermark/3a93a064fda6d17ea19a0ae6da05c276926acf35.png@1320w_392h.webp" width="1866" height="554" data-size="531296" data-index="2" src="//static.hdslb.com/images/transparent.gif" style="width: 660px; height: 196px;"><figcaption class="caption">已获得的页面</figcaption></figure><p>使用脚本下载纯文本，再根据此内容使用正则表达式获取每个粉丝的信息。每日存储，并跟上一天比较即可知道少的或者多的那位粉丝是谁啦</p><p><br></p><p>我打算在中考考完后写一个<strong>实时粉丝查看的工具</strong>，有了这样的工具，就能够即使询问那位取关的粉丝取关的原因了。</p><p><br></p><p style="text-align: right;"><span class="color-yellow-04"><strong>米花</strong></span></p></div>
