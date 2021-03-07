@@ -24,23 +24,34 @@ layout: default
         </div>
         <p class="c-author__about">{{site.about-author | strip_html | truncatewords: 50}}</p>
     </div>
-    <link rel="stylesheet" type="text/css" href="./assets/waifu.css">
     <div class="waifu" id="waifu">
-        <div class="waifu-tips" style="opacity: 1;"></div>
-        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
-        <div class="waifu-tool">
-            <span class="fui-home"></span>
-            <span class="fui-chat"></span>
-            <span class="fui-eye"></span>
-            <span class="fui-user"></span>
-            <span class="fui-photo"></span>
-            <span class="fui-info-circle"></span>
-            <span class="fui-cross"></span>
-        </div>
+        <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+
+        <script>
+            L2Dwidget.init({
+                "model": {
+                    jsonPath: "https://unpkg.com/live2d-widget-model-nito@1.0.5/assets/nito.model.json",
+                    "scale": 1
+                },
+                "display": {
+                    "position": "right",
+                    "width": 150,
+                    "height": 300,
+                    "hOffset": 0,
+                    "vOffset": -20
+                },
+                "mobile": {
+                    "show": true,
+                    "scale": 0.5
+                },
+                "react": {
+                    "opacityDefault": 0.7,
+                    "opacityOnHover": 0.2
+                }
+            });
+        </script>
     </div>
-    <script src="./js/live2d.js"></script>
-    <script src="./js/waifu-tips.js"></script>
-    <script type="text/javascript">initModel()</script>
+
     <div class="c-sidebar-footer">
         <div class="c-social">
             <div class="c-social__title">Social</div>
