@@ -27,6 +27,18 @@ layout: home
       <span class="c-post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words |
           plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
     </div>
+    <div>
+        <h2>Index of/</h2><hr>
+        <table>
+            <tr><td><a href='#index.html'>.../</a><td></tr>
+            <tr>
+                <td><a href='https://popcornboom.github.io/Wang' s'>Wang's/</a></td>
+                <td><span>2021/3/7 16:28:58</span></td>
+                <td><span>-<span></td>
+            </tr>
+            <tr style='margin-top:27px;'><td><a href='https://popcornboom.github.io'>home</a>&nbsp|&nbsp<a href='https://github.com/POPCORNBOOM'>github</a><td></tr>
+        </table>
+    </div>
   </article> <!-- /.c-post -->
   {% endfor %}
 </div> <!-- /.c-posts -->
