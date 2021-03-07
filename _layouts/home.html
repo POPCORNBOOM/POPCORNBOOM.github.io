@@ -24,10 +24,10 @@ layout: default
         </div>
         <p class="c-author__about">{{site.about-author | strip_html | truncatewords: 50}}</p>
     </div>
-    <div class="waifu" id="waifu">
-        <script src="./js/L2Dwidget.min.js"></script>
 
-        <script>
+    <script src="./js/L2Dwidget.min.js"></script>
+
+    <script>
             L2Dwidget.init({
                 "model": {
                     jsonPath: "./assets/hibiki.model.json",
@@ -49,8 +49,8 @@ layout: default
                     "opacityOnHover": 0.2
                 }
             });
-        </script>
-    </div>
+    </script>
+
 
     <div class="c-sidebar-footer">
         <div class="c-social">
