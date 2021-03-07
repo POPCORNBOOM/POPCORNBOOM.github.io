@@ -24,29 +24,29 @@ layout: default
         </div>
         <p class="c-author__about">{{site.about-author | strip_html | truncatewords: 50}}</p>
     </div>
-
+    <script src="{{site.baseurl}}/js/L2Dwidget.min.js"></script>
     <script>
-            L2Dwidget.init({
-                "model": {
-                    jsonPath: "./assets/hibiki.model.json",
-                    "scale": 1
-                },
-                "display": {
-                    "position": "right",
-                    "width": 150,
-                    "height": 300,
-                    "hOffset": 0,
-                    "vOffset": -20
-                },
-                "mobile": {
-                    "show": true,
-                    "scale": 0.5
-                },
-                "react": {
-                    "opacityDefault": 0.7,
-                    "opacityOnHover": 0.2
-                }
-            });
+        L2Dwidget.init({
+            "model": {
+                jsonPath: "./assets/hibiki.model.json",
+                "scale": 1
+            },
+            "display": {
+                "position": "right",
+                "width": 150,
+                "height": 300,
+                "hOffset": 0,
+                "vOffset": -20
+            },
+            "mobile": {
+                "show": true,
+                "scale": 0.5
+            },
+            "react": {
+                "opacityDefault": 0.7,
+                "opacityOnHover": 0.2
+            }
+        });
     </script>
 
 
