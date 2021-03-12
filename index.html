@@ -12,40 +12,43 @@ layout: home
 
 {% include header.html %}
 <div class="c-posts o-opacity" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
-  {% for post in site.posts limit:site.paginate offset:offset %}
-  <article class="c-post">
-    {% if post.image %}
-    <a class="c-post-thumbnail o-opacity" style="background-image: url({{"/images/" | prepend: site.baseurl | append : post.image}})"
-        href="{{post.url | prepend: site.baseurl}}"></a>
-    {% else %} {% endif %}
-    <div class="c-post-content">
-      <h2 class="c-post-title">
-        <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
-      </h2>
-      <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-      <span class="c-post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;â€”&nbsp;</span>
-      <span class="c-post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words |
-          plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-    </div>
-    <div>
-        <h2>Index of/</h2><hr>
-        <table>
-            <tr><td><a href='#index.html'>.../</a><td></tr>
-            <tr>
-                <td><a href='https://popcornboom.github.io/Wang'>Wang/</a></td>
-                <td><span>2021/3/7 16:28:58</span></td>
-                <td><span>-<span></td>
-            </tr>
-            <tr style='margin-top:27px;'><td><a href='https://popcornboom.github.io'>home</a>&nbsp|&nbsp<a href='https://github.com/POPCORNBOOM'>github</a><td></tr>
-        </table>
-    </div>
-  </article> <!-- /.c-post -->
-  {% endfor %}
+	{% for post in site.posts limit:site.paginate offset:offset %}
+	<article class="c-post">
+		{% if post.image %}
+		<a class="c-post-thumbnail o-opacity" style="background-image: url({{"/images/" | prepend: site.baseurl | append : post.image}})"
+		   href="{{post.url | prepend: site.baseurl}}"></a>
+		{% else %} {% endif %}
+		<div class="c-post-content">
+			<h2 class="c-post-title">
+				<a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+			</h2>
+			<p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+			<span class="c-post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;¡ª&nbsp;</span>
+			<span class="c-post-words">
+				{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{
+ words |
+          plus: 250 | divided_by: 250 | append: " minute read"
+				}}{% endunless %}
+			</span>
+		</div>
+		<div>
+			<h2>Index of/</h2><hr />
+			<table>
+				<tr><td><a href='#index.html'>.../</a></td><td></td></tr>
+				<tr>
+					<td><a href='https://popcornboom.github.io/Wang'>Wang/</a></td>
+					<td><span>2021/3/7 16:28:58</span></td>
+					<td><span>-<span></span></span></td>
+				</tr>
+				<tr style='margin-top:27px;'><td><a href='https://popcornboom.github.io'>home</a>&nbsp|&nbsp<a href='https://github.com/POPCORNBOOM'>github</a></td><td></td></tr>
+			</table>
+		</div>
+	</article> <!-- /.c-post -->
+	{% endfor %}
 </div> <!-- /.c-posts -->
-
 {% assign postCount = site.posts | size %}
 {% assign postsCovered = site.paginate | plus:offset %}
 {% if postsCovered < postCount %}
-  <button class="c-load-more c-btn c-btn--middle">åŠ è½½æ›´å¤šæ–‡ç« </button>
+<button class="c-load-more c-btn c-btn--middle">¼ÓÔØ¸ü¶àÎÄÕÂ</button>
 {% endif %}
 {% include categories.html %}
