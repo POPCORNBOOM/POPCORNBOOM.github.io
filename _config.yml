@@ -1,3 +1,4 @@
+encoding: UTF-8
 title: 炸了的米花的博客
 description: 欢迎来到炸了的米花的个人博客！
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -51,3 +52,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
