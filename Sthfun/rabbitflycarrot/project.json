@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Stare at this cute rabbit flying a CGI carrot. This is like a relaxing cartoon animation game. drag your mouse to change the direction of flight. Enjoy!\n\nFor more information watch this short YouTube clip https://youtu.be/R2gdSLAIOFE",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.gif",
+	"tags" : [ "Cartoon" ],
+	"title" : "Rabbit Flying a Carrot",
+	"type" : "web",
+	"visibility" : "public",
+	"workshopid" : "1808443523"
+}

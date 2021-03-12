@@ -1,0 +1,21 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  color: red;
+}
+
+canvas {
+  display: block;
+}
