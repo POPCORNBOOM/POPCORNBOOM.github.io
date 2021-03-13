@@ -21,6 +21,7 @@
 <!-- GOOGLE FONT -->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+ <link href="assets/css/hcover.css" rel="stylesheet" />
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -52,12 +53,9 @@
 <!--NAVBAR SECTION END-->
 <div id="home" >
     <div class="container">
-		<div class="c-author__cover">
-			<a href="{{site.baseurl}}/">
-				<img src="{{site.baseurl}}/images/{% if site.author-image %}{{site.author-image}}{% endif %}" alt="{{site.author-name}}">
-			</a>
-		</div>
 	    	<div class="row">
+
+		
 		   <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 ">
 			   <div id="carousel-slider" data-ride="carousel" class="carousel slide">
 
@@ -81,6 +79,10 @@
 					</ol>
 
 				</div>
+				<div style="width: 100px;;margin:0 auto;; height: 100px;; border-radius:100%; overflow:hidden;">
+					<a href="{{site.baseurl}}/"><img src="https://popcornboom.github.io/images/1.jpg" alt="POPCORNBOOM">
+					</a>
+				</div>
 			
 			  
 		   </div>
@@ -90,14 +92,14 @@
 			  
 			
 			   <p >
-				   Lorem ipsumdolor sitamet, consect adipiscing elit
-				   Lorem ipsumdolor sitamet, consect adipiscing elit
+				   虚怀若谷，
+				   持之以恒。
 				 
 			   </p>
 			   <br/>
-			   <a href="#about" class="btn  btn-lg custom-btn-1"><i class="fa fa-home" ></i>ABOUT </a>  
-			   <a href="#services" class="btn  btn-lg custom-btn-1" ><i class="fa fa-comments-o" ></i> SERVICES </a>
-				<a href="#contact" class="btn btn-lg custom-btn-1"><i class="fa fa-globe" ></i> CONTACT </a>
+			   <a href="#about" class="btn  btn-lg custom-btn-1"><i class="fa fa-home" ></i>关于 </a>  
+			   <a href="#services" class="btn  btn-lg custom-btn-1" ><i class="fa fa-comments-o" ></i> 服务 </a>
+				<a href="#contact" class="btn btn-lg custom-btn-1"><i class="fa fa-globe" ></i> 联系 </a>
 		   </div>
 	    </div>
    </div>
@@ -111,11 +113,11 @@
 		   <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  text-center">
 		   <h2>关于我</h2>
 			<p >
-				   Lorem ipsumdolor sitamet, consect adipiscing elit
-				   Lorem ipsumdolor sitamet, consect adipiscing elit.
-				   Lorem ipsumdolor sitamet, consect adipiscing elit.
-				   Lorem ipsumdolor sitamet, consect adipiscing elit.
-				   Lorem ipsumdolor sitamet, consect adipiscing elit
+				   十六岁，在校高中生。
+				   爱好是敲代码，研究前端，研究各种系统，网页或者是硬件的漏洞。
+				   最近在研究git、node.js、jekyll……
+				   会弹一点电子琴，会打一点架子鼓，摸过吉他贝斯，碰过尤克里里。
+				   踢过足球，打过篮球，打过乒乓球，比过羽毛球XD
 				 
 			   </p>
 		   </div>
@@ -124,29 +126,14 @@
 			<div class="col-lg-4 col-md-4 col-sm-4">
 				<div class="media">
 					<div class="pull-left">
-						<i class=" fa fa-fax fa-4x"></i>
-
-					</div>
-					<div class="media-body">
-						<h3 class="media-heading">100% Free To Use</h3>
-						<p>
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
-						</p>
-
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4">
-				<div class="media">
-					<div class="pull-left">
 						<i class="fa fa-history fa-4x "></i>
 					</div>
 					<div class="media-body">
-						<h3 class="media-heading">Easy To Customize</h3>
+						<h3 class="media-heading">过往经历</h3>
 						<p>
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
+							高一第一学期因为在课上画工程图，就被老师突然拉去参加科创比赛了（？） 
+							选的个人项目，项目名是“基于HOG+SVM的人眼三维信息检测方法”。
+							干的也就那样吧，学校三个项目就我一个人拿了市一等奖。
 						</p>
 
 					</div>
@@ -158,10 +145,9 @@
 						<i class="fa fa-graduation-cap fa-4x  "></i>
 					</div>
 					<div class="media-body">
-						<h3 class="media-heading">Free To Download</h3>
+						<h3 class="media-heading">我的学历</h3>
 						<p>
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
+							深圳市市直属公立高中，高一新生，科创中的大哥，学习中的弟弟。
 						</p>
 
 					</div>
@@ -170,52 +156,9 @@
 		</div>
 		<div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
 		<div class="row ">
-			<div class="col-lg-4 col-md-4 col-sm-4">
-				<div class="media">
-					<div class="pull-left">
-						<i class=" fa fa-paper-plane-o fa-4x"></i>
 
-					</div>
-					<div class="media-body">
-						<h3 class="media-heading">Easy To Understand</h3>
-						<p>
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
-						</p>
 
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4">
-				<div class="media">
-					<div class="pull-left">
-						<i class="fa fa-bullhorn fa-4x "></i>
-					</div>
-					<div class="media-body">
-						<h3 class="media-heading">Jusr Light Weight</h3>
-						<p>
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
-						</p>
 
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4">
-				<div class="media">
-					<div class="pull-left">
-						<i class="fa fa-folder-open-o fa-4x  "></i>
-					</div>
-					<div class="media-body">
-						<h3 class="media-heading">Only For You </h3>
-						<p>
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc. 
-							Aenean faucibus luctus enim. Duis quis sem risu suspend lacinia elementum nunc.
-						</p>
-
-					</div>
-				</div>
-			</div>
 		</div>
 		   </div>
 		   </section>
@@ -225,7 +168,7 @@
    <div class="container">
 	   <div class="row">
 		   <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2  text-center">
-		   <h2> SERVICES</h2>
+		   <h2> 服务</h2>
 			<p >
 				   Lorem ipsumdolor sitamet, consect adipiscing elit
 				   Lorem ipsumdolor sitamet, consect adipiscing elit.
@@ -237,7 +180,70 @@
 		   </div>
 		   </div>
 		   <div class="row ">
-		  
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<div class="media">
+					<div class="pull-left">
+						<i class="fa fa-bullhorn fa-4x "></i>
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading">公告</h3>
+						<p>
+							这个页面还在不断完善中，敬请期待。
+							
+						</p>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<div class="media">
+					<div class="pull-left">
+						<i class=" fa fa-fax fa-4x"></i>
+
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading">找朋友</h3>
+						<p>
+							哼！哼！赫啊啊啊啊啊啊啊啊啊啊——我的化学和数学实在是太烂了。 
+							静静等着，蹲一位学神带我飞！
+						</p>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<div class="media">
+					<div class="pull-left">
+						<i class="fa fa-folder-open-o fa-4x  "></i>
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading">访问我的文件服务器 </h3>
+						<p>
+							这是一个架设在Github.io上的个人博客，其中一部分用来做我的文件服务器。 
+							除了把一些完成和未完成的项目放到这里来，这里可能还会藏着一些别的小♂东♂西😏
+							<a href="https://popcornboom.github.io/Wang/">点击这里</a>
+						</p>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<div class="media">
+					<div class="pull-left">
+						<i class=" fa fa-paper-plane-o fa-4x"></i>
+
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading">芜湖起飞</h3>
+						<p>
+							闲来无事，这里存放了一些基于html的小玩意，或是小工具。
+							<a href="https://popcornboom.github.io/Sthfun/">点击这里</a>
+						</p>
+
+					</div>
+				</div>
+			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6">
 				<div class="media">
 					<div class="pull-left">
