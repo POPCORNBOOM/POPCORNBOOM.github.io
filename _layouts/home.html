@@ -94,8 +94,8 @@ layout: default
             <p>{{site.time | date: '%Y'}} &copy; {{site.author-name}}</p>
         </div>
         <div>
-            <a href="./Wang">文件服务器</a>
-			<a href="./Sthfun">SomethingFun</a>
+            <a href="https://popcornboom.github.io/Wang/">文件服务器</a>
+			<a href="https://popcornboom.github.io/Sthfun/">SomethingFun</a>
         </div>
     </div>
 </aside> <!-- /.c-sidebar -->
@@ -103,3 +103,13 @@ layout: default
 <main class="c-content">
   {{ content }}
 </main> <!-- /.c-content -->
+<!-- 音乐播放器 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"> 
+<div class="aplayer" data-id="3001442117" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.6" >
+
+</div>
+<script>var meting_api='http://api.mizore.cn/meting/api.php?server=:server&type=:type&id=:id'</script>
+<script src="http://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="http://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+<!-- 音乐播放器 -->
+<audio id="bgmMusic" src="demo.mp3" autoplay="autoplay" loop="loop" preload="auto" type="audio/mp3"></audio>
