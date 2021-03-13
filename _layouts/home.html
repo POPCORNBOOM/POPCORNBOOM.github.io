@@ -26,7 +26,7 @@ layout: default
     </div>
     <div>
     <!--<script src="{{site.baseurl}}/js/L2Dwidget.min.js"></script>-->
-    <script src="https://popcornboom.github.io/js/L2Dwidget.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
         <script>
             L2Dwidget.init({
                 "model": {
@@ -47,7 +47,10 @@ layout: default
                 "react": {
                 "opacityDefault": 0.7,
                     "opacityOnHover": 0.2
-                }
+                },
+                "name": {
+                "canvas": "live2dcanvas",
+                "div": "live2d-widget"}
             });
         </script>
     </div>
@@ -95,7 +98,7 @@ layout: default
         </div>
         <div>
             <a href="https://popcornboom.github.io/Wang/">文件服务器</a>
-			<a href="https://popcornboom.github.io/Sthfun/">SomethingFun</a>
+			<a href="https://popcornboom.github.io/Sthfun/">SthFun</a>
         </div>
     </div>
 </aside> <!-- /.c-sidebar -->
@@ -103,10 +106,10 @@ layout: default
 <link rel="stylesheet" href="https://popcornboom.github.io/css/APlayer.min.css"> 
 <div class="aplayer" data-id="3001442117" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.6" ></div>
 <script>var meting_api='http://api.mizore.cn/meting/api.php?server=:server&type=:type&id=:id'</script>
-<script src="http://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-<script src="http://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+<script src="https://popcornboom.github.io/js/APlayer.min.js"></script>
+<script src="https://popcornboom.github.io/js/Meting.min.js"></script>
 <!-- 音乐播放器 -->
-<audio id="bgmMusic" src="demo.mp3" autoplay="autoplay" loop="loop" preload="auto" type="audio/mp3"></audio>
+<audio id="bgmMusic" src="https://popcornboom.github.io/mp3/demo.mp3" autoplay="autoplay" loop="loop" preload="auto" type="audio/mp3"></audio>
 
 <main class="c-content">
   {{ content }}
