@@ -4060,11 +4060,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #333;
+  border-color: rgba(51, 51, 51, 0);
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.726);
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #fff;
