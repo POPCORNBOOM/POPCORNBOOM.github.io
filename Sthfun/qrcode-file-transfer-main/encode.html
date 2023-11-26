@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>QRCode File Transfer</title>
+    <title>二维码文件传输</title>
 </head>
 <body>
 <div style="margin: .5em 0">
     <div style="display: inline-block">File: <input type="file" id="file-selector"></div>
-    <div style="display: inline-block; margin-right: 2em">Speed: <input type="text" id="speed" value="100" style="width: 4em"> ms.</div>
-    <div style="display: inline-block; margin-right: 2em">Progress: <input type="number" id="current-block-index" value="0" style="width: 6em"> / <span id="all-block-count">100</span>.</div>
-    <div style="display: inline-block"><input type="button" value="Start" id="start-button"></div>
+    <div style="display: inline-block; margin-right: 2em">速度：<input type="text" id="speed" value="100" style="width: 4em"> ms.</div>
+    <div style="display: inline-block; margin-right: 2em">进程<input type="number" id="current-block-index" value="0" style="width: 6em"> / <span id="all-block-count">100</span>.</div>
+    <div style="display: inline-block"><input type="button" value="开始传输" id="start-button"></div>
+    <div style="display: inline-block"><input type="button" value="前往解码" id="start-button"></div>
 </div>
 <div id="progress-bar" style="width: 100%; height: 1.5em"></div>
 <img alt="qrcode" id="qrcode" style="display: block; width: 40em; height: 40em; border: 1px solid #eee; image-rendering: pixelated">
